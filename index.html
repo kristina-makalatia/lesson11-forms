@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>   
+    <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-wraper">
+        <a href="#">LOGO</a>
+        <div class="right-block-navigation">
+            <nav>
+                <ul>
+                    <li class="nav-li"> <a href="#"> Home</a></li>
+                    <li class="nav-li"> <a href="#"> News</a></li>
+                    <li class="nav-li active"> <a href="#"> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <section>
+        <form class="form-wraper" action="">
+            <div class="form-div">
+                <label for="fname"> Name </label>
+                <input class="input-form" type="text" id="fname" name="firstname" placeholder="Enter Your Name.." required>
+            </div>
+            <div class="form-div">
+                <label for="mypass"> Password </label>
+                <input class="input-form" type="password" id="mypass" name="passw" placeholder="Enter Your Password.." required>
+            </div>
+
+            <div class="form-div">
+                <label for=""> Your review</label>
+                <textarea class="textarea-form" placeholder="Enter Your Message.."></textarea>
+            </div>
+
+            <div class="radio">
+                <div>
+                    <input type="radio" id="male" name="gender">
+                    <label> Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender">
+                    <label> Female</label>
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="dance" name="hobby-dance">
+                <label> Dance </label>
+
+                <input type="checkbox" id="music" name="hobby-music">
+                <label> Music </label>
+            </div>
+            <button class="btn-submit" type="submit"> Submit</button>
+        </form>
+    </section>
+
+    <section class="section-wraper">
+        <div class="box-wraper">
+            <div class="left-box">
+                <div class="texts-box">
+                    <p> We trust our customers and they trust us too</p>
+                    <h4> lorem Ipsum</h4>
+                </div>            
+            </div>
+            <div class="right-box">
+                <img src="images/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

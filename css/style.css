@@ -1,0 +1,144 @@
+/* Form styles */
+.form-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+}
+.form-wraper {
+    max-width: 700px;
+    width:100%;
+    margin: 0 auto;
+}
+.input-form {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    color: blue;
+    font-size:18px;
+    border:none;
+    border-bottom: 2px solid darkred;
+}
+/* .input-form[type=text] {
+    background-color: red;
+} */
+.input-form:focus,
+.textarea-form:focus {
+    outline:none;
+}
+.textarea-form {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    color: greenyellow;
+    background-color: indigo;
+    border-radius: 15px;
+    padding-left:15px;
+}
+.input-form::-webkit-input-placeholder, .textarea-form::-webkit-input-placeholder {
+    color: red;
+    font-size:14px;
+}
+.input-form::-moz-placeholder, .textarea-form::-moz-placeholder {
+    color: red;
+    font-size:14px;
+}
+.input-form:-ms-input-placeholder, .textarea-form:-ms-input-placeholder {
+    color: red;
+    font-size:14px;
+}
+.input-form::-ms-input-placeholder, .textarea-form::-ms-input-placeholder {
+    color: red;
+    font-size:14px;
+}
+.input-form::placeholder,
+.textarea-form::placeholder {
+    color: red;
+    font-size:14px;
+}
+.btn-submit {
+    width: 200px;
+    height: 50px;
+    background-color: lightcoral;
+    color: #fff;
+    border:none;
+    border-radius: 30px;
+    margin-top:30px;
+}
+.checkbox {
+    margin-top:15px;
+}
+
+
+/* header */
+.header-wraper {
+    background-color: grey;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;
+}
+ul {
+    display:flex;
+}
+li {
+    margin-right:15px;
+}
+li a {
+    color:#fff;
+}
+
+.burger {
+    color: #fff;
+    font-size:30px;
+    display: none;
+}
+.right-block-navigation{
+    display: flex;
+    align-items: center;
+}
+
+
+/* section styles */
+.box-wraper {
+    display: flex;
+}
+.left-box {
+    background-color: #F8F8F8;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-box {
+    width: 40%;
+}
+.right-box img {
+    width:100%;
+}
+
+.texts-box {
+    max-width:512px;
+    width:100%;
+    background-color: khaki;
+    /* margin:0 auto; */
+}
+
+
+
+/* responsive styles */
+@media (max-width:768px) {
+    /* nav {
+        display: none;
+    } */
+    .nav-li:not(.active) {
+        display: none;
+    }
+    .burger {
+        display:block;
+    }
+}
